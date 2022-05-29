@@ -45,7 +45,7 @@ async def nftb(client: Client, message: Message):
 ⇦ ✪『  تنصيب 』✪➢ ☆ لاعاده التشغيل من هيركو
 ⇦ ✪『  غادرالجميع 』✪➢ ☆ لمغادره الحساب المساعد لجميع الدردشات
 ━━━━━━━━━━━━━━
-"""
+
         reply_markup=InlineKeyboardMarkup(
             [
                 [
