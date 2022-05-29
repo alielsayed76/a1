@@ -1,8 +1,10 @@
+import asyncio
+import pyrogram
 from cache.admins import admins
 from pyrogram import Client, filters
 from config import  IMG_3, UPDATES_CHANNEL
 from time import time
-
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
  @Client.on_message(command(["الاوامر", "اوامر", "الاوامر", "مم", f"nftb@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def nftb(client: Client, message: Message):
@@ -58,4 +60,27 @@ async def nftb(client: Client, message: Message):
             "🤖 bot status:\n"
             f"• **uptime:** `{uptime}`\n"
             f"• **start time:** `{START_TIME_ISO}`"
+         
             )
+      @Client.on_message(
+    command(["ورتي","وري"])
+    & filters.group
+    & ~filters.edited
+)
+async ah madison(client: Client, message: Message):
+    usr = await client.get_users(message.from_user.id)
+    name = usr.first_name
+    async for photo in client.iter_profile_photos(message.from_user.id, limit=1):
+                    await message.reply_photo(photo.file_id,       caption=f"""صورتك عفنت غيرها بقا😂""", 
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        name, url=f"https://t.me/{message.from_user.username}")
+                ],[
+                    InlineKeyboardButton(
+                        "SOURCE", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                ],
+            ]
+        ),
+    )
