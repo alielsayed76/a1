@@ -5,6 +5,8 @@ from pyrogram import Client, filters
 from config import  IMG_3, UPDATES_CHANNEL
 from time import time
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
+from driver.filters import command
+
 
  @Client.on_message(command(["الاوامر", "اوامر", "الاوامر", "مم", f"nftb@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def nftb(client: Client, message: Message):
