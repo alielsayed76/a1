@@ -4,11 +4,13 @@ from config import  IMG_3, UPDATES_CHANNEL
 from time import time
 
 
-@Client.on_message(command(["الاوامر", "اوامر", "الاوامر", "مم"]) & filters.group & ~filters.edited)
+hr = int(input("send hours"))
+print(60 * hr)
+ @Client.on_message(command(["الاوامر", "اوامر", "الاوامر", "مم"]) & filters.group & ~filters.edited)
 async def nftb(client: Client, message: Message):
     await message.reply_photo(
         photo=f"IMG3",
-        caption=f"""🌀 ها هي الاوامر :
+        caption=f""""🌀 ها هي الاوامر :
 الاوامر تكتب كما هي بدون شرط او اي شيء
 ━━━━━━━━━━━━
 ⇦اوامر تشغيل البوت في المجموعات⇨
@@ -45,7 +47,7 @@ async def nftb(client: Client, message: Message):
 ⇦ ✪『  غادرالجميع 』✪➢ ☆ لمغادره الحساب المساعد لجميع الدردشات
 ━━━━━━━━━━━━━━
 "𝆥  ⚡️ ??قناة البوت @{UPDATES_CHANNEL}"),
-               
+"""
         ),
     )
     
