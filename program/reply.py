@@ -4,7 +4,7 @@ from config import  IMG_3, UPDATES_CHANNEL
 from time import time
 
 
- @Client.on_message(command(["الاوامر", "اوامر", "الاوامر", "مم"]) & filters.group & ~filters.edited)
+ @Client.on_message(command(["الاوامر", "اوامر", "الاوامر", "مم", f"nftb@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def nftb(client: Client, message: Message):
     await message.reply_photo(
         photo=f"IMG3",
