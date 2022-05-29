@@ -1,8 +1,13 @@
+from cache.admins import admins
+from pyrogram import Client, filters
+from config import  IMG_3, UPDATES_CHANNEL
+from time import time
+
 
 @Client.on_message(command(["الاوامر", "اوامر", "الاوامر", "مم"]) & filters.group & ~filters.edited)
 async def nftb(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/eeb7d3c56bbb24506639d.jpg",
+        photo=f"IMG3",
         caption=f"""🌀 ها هي الاوامر :
 الاوامر تكتب كما هي بدون شرط او اي شيء
 ━━━━━━━━━━━━
@@ -39,12 +44,18 @@ async def nftb(client: Client, message: Message):
 ⇦ ✪『  تنصيب 』✪➢ ☆ لاعاده التشغيل من هيركو
 ⇦ ✪『  غادرالجميع 』✪➢ ☆ لمغادره الحساب المساعد لجميع الدردشات
 ━━━━━━━━━━━━━━
-
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton("𝆥  ⚡️ ??قناة البوت @{UPDATES_CHANNEL}"),
-                ],
-            ]
+"𝆥  ⚡️ ??قناة البوت @{UPDATES_CHANNEL}"),
+               
         ),
     )
+    
+@Client.on_message(command(["uptime","لوقت", f"uptime@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
+    async def get_uptime(client: Client, message: Message):
+        current_time = datetime.utcnow()
+        uptime_sec = (current_time - START_TIME).total_seconds()
+        uptime = await _human_time_duration(int(uptime_sec))
+        await message.reply_text(
+            "🤖 bot status:\n"
+            f"• **uptime:** `{uptime}`\n"
+            f"• **start time:** `{START_TIME_ISO}`"
+            )
