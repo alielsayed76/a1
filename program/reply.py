@@ -8,7 +8,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 @Client.on_message(command(["لاوامر", "وامر", "لاوامر", "م"]) & other_filters)
 async def nftb(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"IMG3",
+        photo=f"{IMG3}",
         caption=f"""🌀 ها هي الاوامر :
 الاوامر تكتب كما هي بدون شرط او اي شيء
 ━━━━━━━━━━━━
