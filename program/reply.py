@@ -1,6 +1,6 @@
 from cache.admins import admins
 from pyrogram import Client, filters
-from config import  IMG_3, UPDATES_CHANNEL
+from config import  IMG_3, UPDATES_CHANNEL, OWNER_NAME
 from time import time
 from driver.filters import command, other_filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
