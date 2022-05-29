@@ -5,7 +5,7 @@ from time import time
 from driver.filters import command, other_filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-@Client.on_message(command(["لاوامر", "وامر", "لاوامر", "م"]) & filters_group & ~filters.edited)
+@Client.on_message(command(["لاوامر", "وامر", "لاوامر", "م"]) & other_filters)
 async def nftb(client: Client, message: Message):
     await message.reply_photo(
         photo=f"IMG3",
