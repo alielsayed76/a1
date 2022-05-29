@@ -8,7 +8,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from driver.filters import command
 
 
- @Client.on_message(command(["الاوامر", "اوامر", "الاوامر", "مم", f"nftb@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
+ @Client.on_message(command(["الاوامر", "اوامر", "الاوامر", "م", f"nftb@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def nftb(client: Client, message: Message):
     await message.reply_photo(
         photo=f"IMG3",
