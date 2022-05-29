@@ -4,8 +4,6 @@ from config import  IMG_3, UPDATES_CHANNEL
 from time import time
 
 
-hr = int(input("send hours"))
-print(60 * hr)
  @Client.on_message(command(["الاوامر", "اوامر", "الاوامر", "مم"]) & filters.group & ~filters.edited)
 async def nftb(client: Client, message: Message):
     await message.reply_photo(
