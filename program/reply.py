@@ -9,7 +9,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 async def nftb(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{IMG_3}",
-        caption=f"""🌀 ها هي الاوامر :
+        caption=f"""🌀 ها هي اوامر البوت :
 ━━━━━━━━━━━━
 ⇦اوامر تشغيل البوت في المجموعات⇨
 ⇦ ✪『 تشغيل 』✪➢ ➕ 「اسم الأغنية او / رابط」تشغيل الصوت mp3
