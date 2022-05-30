@@ -72,7 +72,7 @@ async def vgdg(client: Client, message: Message):
 
 
 @Client.on_message(command(["جلي"]) & other_filters)
-async def nftb(client: Client, message: Message):
+async def nftbs(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{IMG_3}",
         caption=f"""تتشل يبعيد 😹😹
