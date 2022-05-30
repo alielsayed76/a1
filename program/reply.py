@@ -52,13 +52,13 @@ async def nftb(client: Client, message: Message):
     
     
 @Client.on_message(
-    filters.command(["قول"]) & other_filters & ~filters.edited)
+    filters.command(["قول"]) & other_filters)
 def echo(client, msg):
     text = msg.text.split(None, 1)[1]
     msg.reply(text)
     
     
-@Client.on_message(command(["."]) & other_filters & ~filters.edited)
+@Client.on_message(command(["."]) & other_filters)
 async def vgdg(client: Client, message: Message):
     await message.reply_text(
         f""" صلي علي الحبيب ❤️ """,
