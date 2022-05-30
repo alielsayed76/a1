@@ -56,11 +56,11 @@ def ids(client: Client, message: Message):
     ali = message.reply_to_message
     if ali:
         message.reply_text(
-            f"Name: {message.from_user.mention()}\nid: {massage.from_user.id}\nUserName: @{massage.from_user.username}"
+            f"اسمه 🤓❤️: {message.from_user.mention()}\nايديه ☺️: {massage.from_user.id}\nيوزره 🌚🙈: @{massage.from_user.username}"
         )
     else:
         message.reply(
-            f"Name: {message.from_user.mention()}\nYour id: {message.from_user.id}"
+            f"اسمك 🤓❤️: {message.from_user.mention()}\nايديك ☺️: {message.from_user.id}\nيوزرك 🌚🙈: @{massage.from_user.username}"
         )
 
 
