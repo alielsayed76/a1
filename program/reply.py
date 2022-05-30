@@ -1,6 +1,7 @@
 import asyncio
 import os
 import time
+import pyrogram
 from cache.admins import admins
 from pyrogram import Client, filters
 from config import IMG_3, UPDATES_CHANNEL, OWNER_NAME
