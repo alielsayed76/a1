@@ -1,11 +1,14 @@
+import asyncio
+import os
+import time
 from cache.admins import admins
 from pyrogram import Client, filters
-from config import  IMG_3, UPDATES_CHANNEL, OWNER_NAME
-from time import time
+from config import IMG_3, UPDATES_CHANNEL, OWNER_NAME
 from driver.filters import command, other_filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-@Client.on_message(command(["لاوامر", "وامر", "لاوامر", "م"]) & other_filters)
+
+@Client.on_message(command(["لإعدادات", "لاعدادات", "عدادات", "م"]) & other_filters)
 async def nftb(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{IMG_3}",
@@ -47,4 +50,10 @@ async def nftb(client: Client, message: Message):
     )
     
     
-
+@Client.on_message(
+    filters.command(["قول"]) & filters.group & ~filters.edited)
+def echo(client, msg):
+    text = msg.text.split(None, 1)[1]
+    msg.reply(text)
+    
+    
