@@ -73,4 +73,8 @@ async def vgdg(client: Client, message: Message):
 
 @Client.on_message(command(["جلي"]) & other_filters)
 async def nftbs(client: Client, message: Message):
-    await message.reply(caption=f"""تتشل يبعيد 😹😹""")
+    await message.reply(
+        caption=f"""تتشل يبعيد 😹😹
+        """)
+
+    
