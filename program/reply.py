@@ -67,8 +67,8 @@ def ids(client: Client, message: Message):
 @Client.on_message(command(["."]) & other_filters)
 async def vgdg(client: Client, message: Message):
     await message.reply(
-        f""" صلي علي الحبيب ❤️ """,
-        ),
+        f""" صلي علي الحبيب ❤️ """
+        )
 
 
 @Client.on_message(command(["جلي"]) & other_filters)
