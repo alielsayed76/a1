@@ -65,7 +65,7 @@ async def vgdg(client: Client, message: Message):
     )
 
 @Client.on_message(command([".."]) & filters.group)
-    async def vgdg2(client: Client, message: Message):
+    async def vgd(client: Client, message: Message):
         await message.reply_text(
             f""" واحده كمن بقا يحته🙈♥️ """,
     )
