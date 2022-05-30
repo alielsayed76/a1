@@ -61,17 +61,5 @@ def echo(client, msg):
 @Client.on_message(command(["."]) & filters.group)
 async def vgdg(client: Client, message: Message):
     await message.reply_text(
-        f""" خليهم اتنين واحبك🌚🙈😂 """,
-    )
-
-@Client.on_message(command([".."]) & filters.group)
-    async def vgd(client: Client, message: Message):
-        await message.reply_text(
-            f""" واحده كمن بقا يحته🙈♥️ """,
-    )
-
-@Client.on_message(command(["..."]) & filters.group)
-    async def dotrep(client: Client, message: Message):
-            await message.reply_text(
-                f""" حطهم فتيزك🙈🌚😹 """,
+        f""" صلي علي الحبيب ❤️ """,
     )
