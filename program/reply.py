@@ -100,3 +100,10 @@ async def gghpb(client: Client, message: Message):
     )
     
     
+@Client.on_message(command(["حبك", "بق", "بكك", "حبق", "بقق", "حبكك"]) & other_filters)
+async def nftbs(client: Client, message: Message):
+    await message.reply(
+        f"""{message.from_user.mention()}بموت فيك يروح قلبي 🥺❤️
+        """)
+    
+    
