@@ -51,7 +51,7 @@ async def nftb(client: Client, message: Message):
     )
     
     
-@Client.on_message(command["ايدي"])
+@Client.on_message(command(["ايدي"]) & other_filters)
 def ids(client: Client, message: Message):
     ali = message.reply_to_message
     if ali:
@@ -64,7 +64,7 @@ def ids(client: Client, message: Message):
         )
 
 
-@Client.on_message(command(["."]) & filters.group)
+@Client.on_message(command(["."]) & other_filters)
 async def vgdg(client: Client, message: Message):
     await message.reply(
         f""" صلي علي الحبيب ❤️ """,
