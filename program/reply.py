@@ -56,7 +56,7 @@ def ids(client: Client, message: Message):
     ali = message.reply_to_message
     if ali:
         message.reply_text(
-            f"اسمه 🤓❤️: {message.from_mention_user.mention()}\nايديه ☺️: {message.from_user.id}\nيوزره 🌚🙈: @{message.from_user.username}"
+            f"اسمه 🤓❤️: {message.from_user.mention()}\nايديه ☺️: {message.from_user.id}\nيوزره 🌚🙈: @{message.from_user.username}"
         )
     else:
         message.reply(
@@ -70,3 +70,10 @@ async def vgdg(client: Client, message: Message):
         f""" صلي علي الحبيب ❤️ """,
         ),
 
+
+@Client.on_message(command(["جلي"]) & other_filters)
+async def nftb(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"{IMG_3}",
+        caption=f"""تتشل يبعيد 😹😹
+""")
