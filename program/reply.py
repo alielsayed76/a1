@@ -51,15 +51,15 @@ async def nftb(client: Client, message: Message):
     )
     
     
-@Client.on_message(
-    filters.command(["قول"]) & other_filters)
-def echo(client, msg):
-    text = msg.text.split(None, 1)[1]
-    msg.reply(text)
-    
-    
-@Client.on_message(command(["."]) & other_filters)
-async def vgdg(client: Client, message: Message):
-    await message.reply_text(
-        f""" صلي علي الحبيب ❤️ """,
-    )
+@Client.on_message(command("ايدي"))
+def ids(client: Client, message: Message):
+    elketib = message.reply_to_message
+    if elketib:
+        message.reply_text(
+            f"Name: {message.from_user.mention()}\nid: {massage.from_user.id}\nUserName: @{massage.from_user.username}"
+        )
+    else:
+        message.reply(
+            f"Name: {message.from_user.mention()}\nYour id: {message.from_user.id}"
+        )
+
