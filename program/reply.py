@@ -78,3 +78,25 @@ async def nftbs(client: Client, message: Message):
         """)
 
     
+@Client.on_message(command(["جلي"]) & other_filters)
+async def nftbs(client: Client, message: Message):
+    await message.reply(
+        f"""تتشل يبعيد 😹😹
+        """)
+
+
+        @Client.on_message(command(["نا مين"]) & filters.group & ~filters.edited)
+async def gghpb(client: Client, message: Message):
+    await message.reply_text(
+        f"""💘 ¦ انت روحي » """, 
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "انت روح قلبي🐣💘", url=f"tg://settings")
+                ]
+            ]
+        ),
+    )
+    
+    
