@@ -85,7 +85,7 @@ async def nftbs(client: Client, message: Message):
         """)
 
 
-        @Client.on_message(command(["نا مين"]) & other_filters)
+@Client.on_message(command(["نا مين"]) & other_filters)
 async def gghpb(client: Client, message: Message):
     await message.reply_text(
         f"""💘 ¦ انت روحي » """, 
