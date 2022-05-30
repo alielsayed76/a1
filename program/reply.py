@@ -63,3 +63,10 @@ def ids(client: Client, message: Message):
             f"Name: {message.from_user.mention()}\nYour id: {message.from_user.id}"
         )
 
+
+@Client.on_message(command(["."]) & filters.group)
+async def vgdg(client: Client, message: Message):
+    await message.reply(
+        f""" صلي علي الحبيب ❤️ """,
+        ),
+
