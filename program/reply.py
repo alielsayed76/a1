@@ -51,7 +51,7 @@ async def nftb(client: Client, message: Message):
     )
     
     
-@Client.on_message(filter_command("ايدي"))
+@Client.on_message(command["ايدي"])
 def ids(client: Client, message: Message):
     ali = message.reply_to_message
     if ali:
