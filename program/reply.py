@@ -60,20 +60,17 @@ def echo(client, msg):
 @Client.on_message(command(["."]) & filters.group)
 async def vgdg(client: Client, message: Message):
     await message.reply_text(
-        f"""[ خليهم اتنين واحبك🌚🙈😂 """,
-        ),
+        f""" خليهم اتنين واحبك🌚🙈😂 """,
     )
 
 @Client.on_message(command([".."]) & filters.group)
     async def vgdg(client: Client, message: Message):
         await message.reply_text(
-            f"""[ واحده كمن بقا يحته🙈♥️ """,
-        ),
+            f""" واحده كمن بقا يحته🙈♥️ """,
     )
 
 @Client.on_message(command(["..."]) & filters.group)
     async def vgdg(client: Client, message: Message):
             await message.reply_text(
-                f"""[ حطهم فتيزك🙈🌚😹 """,
-         ),
+                f""" حطهم فتيزك🙈🌚😹 """,
     )
