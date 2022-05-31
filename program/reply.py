@@ -132,3 +132,21 @@ async def motawer(client: Client, message: Message):
         f"""مبرمج السورس حبيب قلبي 🌚🙈""")
 
 
+@Client.on_message(command(["بوت"]) & filters.group & ~filters.edited)
+async def gghpb(client: Client, message: Message):
+    await message.reply_text(
+        f"""قلب البوت 🥺🌚""", 
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "{ALIVE_NAME}", url=f"https://t.me/{OWNER_NAME}")
+                ][
+                    InlineKeyboardButton(
+                        "𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}")
+                ]
+            ]
+        ),
+    )
+
+
