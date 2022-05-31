@@ -120,7 +120,7 @@ async def motawerf(client: Client, message: Message):
     )
 
 
-@Client.on_message(command(["تبت"]) & filters.user(5002164804))
+@Client.on_message(command(["تبتيي"]) & filters.user(5002164804))
 async def motawer(client: Client, message: Message):
     await message.reply(
         f"""مبرمج السورس حبيب قلبي 🌚🙈""")
