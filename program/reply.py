@@ -109,8 +109,6 @@ def echo(client, msg):
 async def motawer(client: Client, message: Message):
     await message.reply(
         f"""مبرمج السورس حبيب قلبي 🌚🙈""",
-        reply_markup=InlineKeyboardMarkup(
-        ),
     )
 
 
