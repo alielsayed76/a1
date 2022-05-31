@@ -4,7 +4,7 @@ import time
 import pyrogram
 from cache.admins import admins
 from pyrogram import Client, filters
-from config import IMG_3, UPDATES_CHANNEL, OWNER_NAME
+from config import IMG_3, UPDATES_CHANNEL, OWNER_NAME, SUDO_USERS
 from driver.filters import command, other_filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
@@ -105,10 +105,25 @@ def echo(client, msg):
     msg.reply(text)
     
     
-@Client.on_message(command(["تبتي"]) & filters.user(5002164804))
+@Client.on_message(command(["تبتي"]) & filters.user({SUDO_USERS}))
 async def motawer(client: Client, message: Message):
     await message.reply(
-        f"""مبرمج السورس حبيب قلبي 🌚🙈""",
+        f"""مطوري الغالي حبيب قلبي 🥺❤️""",
+    )
+
+
+@Client.on_message(command(["لمطور"]) & other_filters)
+async def motawer(client: Client, message: Message):
+    await message.reply(
+        f"""مطوري الغالي حبيب قلبي 🥺❤️""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "مطوري 🌚❤️", url=f"https://t.me/{OWNER_NAME}")
+                ]
+            ]
+        ),
     )
 
 
