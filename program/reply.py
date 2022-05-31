@@ -133,7 +133,7 @@ async def motawer(client: Client, message: Message):
 
 
 @Client.on_message(command(["وت"]) & filters.group & ~filters.edited)
-async def gghpbh(client: Client, message: Message):
+async def gghpbhab(client: Client, message: Message):
     await message.reply_text(
         f"""قلب البوت 🥺🌚""", 
         reply_markup=InlineKeyboardMarkup(
@@ -141,7 +141,7 @@ async def gghpbh(client: Client, message: Message):
                 [
                     InlineKeyboardButton(
                         "{ALIVE_NAME}", url=f"https://t.me/{OWNER_NAME}")
-                ][
+                ],[
                     InlineKeyboardButton(
                         "𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ]
