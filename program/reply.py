@@ -109,40 +109,40 @@ def echo(client, msg):
 def forward(client, message):
   chat_id = message.chat.id
   user_id = message.from_user.id
-  rank = bot.get_chat_member(chat_id, user_id)
+  rank = get_chat_member(chat_id, user_id)
   rank = rank.status
   if rank == "administrator":
-   bot.send_message(chat_id,"مسؤول",
+   message.reply_text(chat_id,"مسؤول",
    [
                     InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 ]
                 )
   elif rank == "creator":
-   bot.send_message(chat_id,"المنشئ يعم",
+   message.reply_text(chat_id,"المنشئ يعم",
     [
                     InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 ]
                 )
   elif rank == "member":
-   bot.send_message(chat_id,"عضو زليل",
+   message.reply_text(chat_id,"عضو زليل",
     [
                     InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 ]
                 )
   elif rank == "restricted":
-   bot.send_message(chat_id,"عضو متقيد",
+   message.reply_text(chat_id,"عضو متقيد",
     [
                     InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 ]
                 )
   elif rank == "left":
-   bot.send_message(chat_id,"انتا خرجت يعم",
+   message.reply_text(chat_id,"انتا خرجت يعم",
     [
                     InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 ]
                 )
   elif rank == "kicked":
-   bot.send_message(chat_id,"الراجل ده واخد بالجزمه ومحظور",
+   message.reply_text(chat_id,"الراجل ده واخد بالجزمه ومحظور",
     [
                     InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 ]
