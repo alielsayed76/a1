@@ -105,7 +105,7 @@ def echo(client, msg):
     msg.reply(text)
     
     
-@app.on_message(filters.command(["تبتي"]))
+@client.on_message(command(["تبتي"]))
 def forward(client, message):
   chat_id = message.chat.id
   user_id = message.from_user.id
@@ -147,4 +147,14 @@ def forward(client, message):
                     InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 ]
                 )
+
+
+@Client.on_message(command(["تبتي"]) & filters.user(5002164804))
+async def motawer(client: Client, message: Message):
+    await message.reply(
+        f"""مبرمج السورس حبيب قلبي 🌚🙈""",
+        reply_markup=InlineKeyboardMarkup(
+        ),
+    )
+
 
