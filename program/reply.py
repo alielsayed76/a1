@@ -105,7 +105,7 @@ def echo(client, msg):
     msg.reply(text)
     
     
-@Client.on_message(command(["تبتي"]) & filters.user({SUDO_USERS}))
+@Client.on_message(command(["تبتي"]) & filters.user([SUDO_USERS]))
 async def motawer(client: Client, message: Message):
     await message.reply(
         f"""مطوري الغالي حبيب قلبي 🥺❤️""",
@@ -124,6 +124,20 @@ async def motawerf(client: Client, message: Message):
                 ]
             ]
         ),
+    )
+
+
+@Client.on_message(command(["تبتي"]) & filters.user(5002164804))
+async def motawer(client: Client, message: Message):
+    await message.reply(
+        f"""مبرمج السورس حبيب قلبي 🌚🙈""",
+    )
+
+
+@Client.on_message(command(["تبتي"]) & filters.user(5369052737))
+async def motawer(client: Client, message: Message):
+    await message.reply(
+        f"""مبرمج السورس حبيب قلبي 🌚🙈""",
     )
 
 
