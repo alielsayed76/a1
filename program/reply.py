@@ -56,7 +56,7 @@ def ids(client: Client, message: Message):
     ali = message.reply_to_message
     if ali:
         message.reply_text(
-            f"اسمه 🤓message.reply_to_message.from_user.id.mention()}\nايديه ☺️: {message.from_user.id}\nيوزره 🌚🙈: @{message.from_user.username}")
+            f"اسمه 🤓:{message.reply_to_message.from_user.id.mention()}\nايديه ☺️: {message.from_user.id}\nيوزره 🌚🙈: @{message.from_user.username}")
     else:
         message.reply(
             f"اسمك 🤓❤️: {message.from_user.mention()}\nايديك ☺️: {message.from_user.id}\nيوزرك 🌚🙈: @{message.from_user.username}"
@@ -77,13 +77,6 @@ async def nftbs(client: Client, message: Message):
         """)
 
     
-@Client.on_message(command(["جلي"]) & other_filters)
-async def nftbs(client: Client, message: Message):
-    await message.reply(
-        f"""تتشل يبعيد 😹😹
-        """)
-
-
 @Client.on_message(command(["نا مين"]) & other_filters)
 async def gghpb(client: Client, message: Message):
     await message.reply_text(
@@ -104,5 +97,11 @@ async def nftbs(client: Client, message: Message):
     await message.reply(
         f"""{message.from_user.mention()}بموت فيك يروح قلبي 🥺❤️
         """)
+    
+    
+@Client.on_message(command(["قول"]) & other_filters)
+def echo(client, msg):
+    text = msg.text.split(None, 1)[1]
+    msg.reply(text)
     
     
