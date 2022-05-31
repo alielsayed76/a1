@@ -105,50 +105,6 @@ def echo(client, msg):
     msg.reply(text)
     
     
-@Client.on_message(command(["تبتي"]))
-def forward(client, message):
-  chat_id = message.chat.id
-  user_id = message.from_user.id
-  rank = get_chat_member(chat_id, user_id)
-  rank = rank.status
-  if rank == "administrator":
-   message.reply_text(chat_id,"مسؤول",
-   [
-                    InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                ]
-                )
-  elif rank == "creator":
-   message.reply_text(chat_id,"المنشئ يعم",
-    [
-                    InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                ]
-                )
-  elif rank == "member":
-   message.reply_text(chat_id,"عضو زليل",
-    [
-                    InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                ]
-                )
-  elif rank == "restricted":
-   message.reply_text(chat_id,"عضو متقيد",
-    [
-                    InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                ]
-                )
-  elif rank == "left":
-   message.reply_text(chat_id,"انتا خرجت يعم",
-    [
-                    InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                ]
-                )
-  elif rank == "kicked":
-   message.reply_text(chat_id,"الراجل ده واخد بالجزمه ومحظور",
-    [
-                    InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                ]
-                )
-
-
 @Client.on_message(command(["تبتي"]) & filters.user(5002164804))
 async def motawer(client: Client, message: Message):
     await message.reply(
