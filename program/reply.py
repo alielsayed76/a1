@@ -140,7 +140,7 @@ async def gghpbhab(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "{ALIVE_NAME}", url=f"https://t.me/{OWNER_NAME}")
+                        "DEV", url=f"https://t.me/{OWNER_NAME}")
                 ],[
                     InlineKeyboardButton(
                         "𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}")
