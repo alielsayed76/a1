@@ -132,7 +132,7 @@ async def motawer(client: Client, message: Message):
         f"""مبرمج السورس حبيب قلبي 🌚🙈""")
 
 
-@Client.on_message(command(["بوت"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["وت"]) & filters.group & ~filters.edited)
 async def gghpbh(client: Client, message: Message):
     await message.reply_text(
         f"""قلب البوت 🥺🌚""", 
