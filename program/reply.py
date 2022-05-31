@@ -105,7 +105,7 @@ def echo(client, msg):
     msg.reply(text)
     
     
-@client.on_message(command(["تبتي"]))
+@Client.on_message(command(["تبتي"]))
 def forward(client, message):
   chat_id = message.chat.id
   user_id = message.from_user.id
