@@ -105,3 +105,46 @@ def echo(client, msg):
     msg.reply(text)
     
     
+@app.on_message(filters.command(["تبتي"]))
+def forward(client, message):
+  chat_id = message.chat.id
+  user_id = message.from_user.id
+  rank = app.get_chat_member(chat_id, user_id)
+  rank = rank.status
+  if rank == "administrator":
+   app.send_message(chat_id,"مسؤول",
+   [
+                    InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                ]
+                )
+  elif rank == "creator":
+   app.send_message(chat_id,"المنشئ يعم",
+    [
+                    InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                ]
+                )
+  elif rank == "member":
+   app.send_message(chat_id,"عضو زليل",
+    [
+                    InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                ]
+                )
+  elif rank == "restricted":
+   app.send_message(chat_id,"عضو متقيد",
+    [
+                    InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                ]
+                )
+  elif rank == "left":
+   app.send_message(chat_id,"انتا خرجت يعم",
+    [
+                    InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                ]
+                )
+  elif rank == "kicked":
+   app.send_message(chat_id,"الراجل ده واخد بالجزمه ومحظور",
+    [
+                    InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                ]
+                )
+
