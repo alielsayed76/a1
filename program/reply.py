@@ -105,13 +105,6 @@ def echo(client, msg):
     msg.reply(text)
     
     
-@Client.on_message(command(["تبتي"]) & filters.user({SUDO_USERS}))
-async def motawer(client: Client, message: Message):
-    await message.reply(
-        f"""مطوري الغالي حبيب قلبي 🥺❤️""",
-    )
-
-
 @Client.on_message(command(["لمطور"]) & other_filters)
 async def motawerf(client: Client, message: Message):
     await message.reply(
