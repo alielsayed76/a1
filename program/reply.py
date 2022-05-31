@@ -113,7 +113,7 @@ async def motawer(client: Client, message: Message):
 
 
 @Client.on_message(command(["لمطور"]) & other_filters)
-async def motawer(client: Client, message: Message):
+async def motawerf(client: Client, message: Message):
     await message.reply(
         f"""مطوري الغالي حبيب قلبي 🥺❤️""",
         reply_markup=InlineKeyboardMarkup(
