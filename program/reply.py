@@ -133,7 +133,7 @@ async def motawer(client: Client, message: Message):
 
 
 @Client.on_message(command(["بوت"]) & filters.group & ~filters.edited)
-async def gghpb(client: Client, message: Message):
+async def gghpbh(client: Client, message: Message):
     await message.reply_text(
         f"""قلب البوت 🥺🌚""", 
         reply_markup=InlineKeyboardMarkup(
