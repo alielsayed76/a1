@@ -9,7 +9,7 @@ from driver.filters import command, other_filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 
-@Client.on_message(command(["لإعدادات", "لاعدادات", "عدادات", "م"]) & other_filters)
+@Client.on_message(filters.command(["لإعدادات", "لاعدادات", "عدادات", "م"]) & other_filters)
 async def nftb(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{IMG_3}",
@@ -51,7 +51,7 @@ async def nftb(client: Client, message: Message):
     )
     
     
-@Client.on_message(command(["يدي"]) & other_filters)
+@Client.on_message(filters.command(["يدي"]) & other_filters)
 def ids(client: Client, message: Message):
     ali = message.reply_to_message
     if ali:
@@ -70,14 +70,14 @@ async def vgdg(client: Client, message: Message):
         )
 
 
-@Client.on_message(filter.command(["جلي"]) & other_filters)
+@Client.on_message(filters.command(["جلي"]) & other_filters)
 async def nftbs(client: Client, message: Message):
     await message.reply(
         f"""تتشل يبعيد 😹😹
         """)
 
     
-@Client.on_message(filter.command(["نا مين"]) & other_filters)
+@Client.on_message(filters.command(["نا مين"]) & other_filters)
 async def gghpb(client: Client, message: Message):
     await message.reply_text(
         f"""💘 ¦ انت روحي » """, 
@@ -105,7 +105,7 @@ def echo(client, msg):
     msg.reply(text)
     
     
-@Client.on_message(filter.command(["لمطور"]) & other_filters)
+@Client.on_message(filters.command(["لمطور"]) & other_filters)
 async def motawerf(client: Client, message: Message):
     await message.reply(
         f"""مطوري الغالي حبيب قلبي 🥺❤️""",
@@ -122,19 +122,19 @@ async def motawerf(client: Client, message: Message):
     )
 
 
-@Client.on_message(command(["تبتي"]) & filters.user(5369052737))
+@Client.on_message(filters.command(["تبتي"]) & filters.user(5369052737))
 async def motawer(client: Client, message: Message):
     await message.reply(
         f"""انت مبرمج السورس حبيب قلبي 🌚🙈""")
 
 
-@Client.on_message(command(["تبتي"]) & filters.user(5002164804))
+@Client.on_message(filters.command(["تبتي"]) & filters.user(5002164804))
 async def motawer(client: Client, message: Message):
     await message.reply(
         f"""مبرمج السورس حبيب قلبي 🌚🙈""")
 
 
-@Client.on_message(command(["وت"]) & filters.group & ~filters.edited)
+@Client.on_message(filters.command(["وت"]) & filters.group & ~filters.edited)
 async def gghpbhab(client: Client, message: Message):
     await message.reply_text(
         f"""قلب البوت 🥺🌚""", 
@@ -152,7 +152,7 @@ async def gghpbhab(client: Client, message: Message):
     )
 
 
-@Client.on_message(command(["علي"]) & filters.group & ~filter.edited)
+@Client.on_message(filters.command(["علي"]) & filters.group & ~filter.edited)
 async def motawer(client: Client, message: Message):
     await message.reply_photo(
         photo = "https://telegra.ph/file/f7a8e5469df132cf1d5c1.jpg",
@@ -167,7 +167,7 @@ async def motawer(client: Client, message: Message):
     ))
                 
                 
-@Client.on_message(command(["حسن"]) & filters.group & ~filter.edited)
+@Client.on_message(filters.command(["حسن"]) & filters.group & ~filter.edited)
 async def motawer(client: Client, message: Message):
     await message.reply(
         f"""مبرمج السورس حبيب قلبي 🌚🙈""",
