@@ -163,7 +163,7 @@ async def motawer(client: Client, message: Message):
                     InlineKeyboardButton(
                         "Dev ALI", url=f"https://t.me/EL_RAYEQ")
                 ]
-    )
+    ))
                 
                 
 @Client.on_message(command(["حسن"]) & filters.group & ~filter.edited)
@@ -176,4 +176,4 @@ async def motawer(client: Client, message: Message):
                     InlineKeyboardButton(
                         "Dev Arbawy", url=f"https://t.me/Dev_Arbawy")
                 ]
-    )
+    ))
