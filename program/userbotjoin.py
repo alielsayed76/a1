@@ -83,3 +83,19 @@ async def leave_all(client, message):
     await client.send_message(
         message.chat.id, f"✅ Left from: {left} chats.\n❌ Failed in: {failed} chats."
     )
+@Client.on_message(command(["وت", f"boutt@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
+async def gghpbhab(client: Client, message: Message):
+    await message.reply_text(
+        f"""قلب البوت 🥺🌚""", 
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "DEV", url=f"https://t.me/{OWNER_NAME}")
+                ],[
+                    InlineKeyboardButton(
+                        "𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}")
+                ]
+            ]
+        ),
+    )
