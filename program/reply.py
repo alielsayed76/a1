@@ -70,14 +70,14 @@ async def vgdg(client: Client, message: Message):
         )
 
 
-@Client.on_message(command(["جلي"]) & other_filters)
+@Client.on_message(filter.command(["جلي"]) & other_filters)
 async def nftbs(client: Client, message: Message):
     await message.reply(
         f"""تتشل يبعيد 😹😹
         """)
 
     
-@Client.on_message(command(["نا مين"]) & other_filters)
+@Client.on_message(filter.command(["نا مين"]) & other_filters)
 async def gghpb(client: Client, message: Message):
     await message.reply_text(
         f"""💘 ¦ انت روحي » """, 
@@ -105,7 +105,7 @@ def echo(client, msg):
     msg.reply(text)
     
     
-@Client.on_message(command(["لمطور"]) & other_filters)
+@Client.on_message(filter.command(["لمطور"]) & other_filters)
 async def motawerf(client: Client, message: Message):
     await message.reply(
         f"""مطوري الغالي حبيب قلبي 🥺❤️""",
@@ -114,6 +114,8 @@ async def motawerf(client: Client, message: Message):
                 [
                     InlineKeyboardButton(
                         "مطوري 🌚❤️", url=f"https://t.me/{OWNER_NAME}")
+                ],
+                [InlineKeyboardButton("🎧اضافه البوت اللي مجموعتك🎧", url=f"http://t.me/{BOT_USERNAME}?startgroup=new"),              
                 ]
             ]
         ),
@@ -150,3 +152,28 @@ async def gghpbhab(client: Client, message: Message):
     )
 
 
+@Client.on_message(command(["علي"]) & filters.group & ~filter.edited)
+async def motawer(client: Client, message: Message):
+    await message.reply_photo(
+        photo = "https://telegra.ph/file/f7a8e5469df132cf1d5c1.jpg"
+       caption =f"""مبرمج السورس حبيب قلبي 🌚🙈""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "Dev ALI", url=f"https://t.me/EL_RAYEQ")
+                ]
+    )
+                
+                
+@Client.on_message(command(["حسن"]) & filters.group & ~filter.edited)
+async def motawer(client: Client, message: Message):
+    await message.reply(
+        f"""مبرمج السورس حبيب قلبي 🌚🙈""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "Dev Arbawy", url=f"https://t.me/Dev_Arbawy")
+                ]
+    )
