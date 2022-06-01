@@ -4,7 +4,7 @@ import time
 import pyrogram
 from cache.admins import admins
 from pyrogram import Client, filters
-from config import IMG_3, UPDATES_CHANNEL, OWNER_NAME, SUDO_USERS
+from config import IMG_3, UPDATES_CHANNEL, OWNER_NAME, SUDO_USERS, BOT_USERNAME
 from driver.filters import command, other_filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
