@@ -29,7 +29,7 @@
             "required": true
         },
         "BOT_NAME": {
-            "description": "بوضع اسم بوتك",
+            "description": "قم بوضع اسم بوتك",
             "required": true
         },
         "ASSISTANT_NAME": {
@@ -63,8 +63,12 @@
             "description": "اتركها كما هي",
             "required": true,
             "value": "MUSIC ARBAWY"
-        }
-    },
+        },
+        "HNDLR": {
+            "description": "اتركها كما هي",
+            "required": true,
+            "value" : "ر"
+        },
     "addons": [],
     "buildpacks": [
         {
