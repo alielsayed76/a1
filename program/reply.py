@@ -123,7 +123,7 @@ async def motawerf(client: Client, message: Message):
 
 
 @Client.on_message(filters.command(["تبتي"]) & filters.user(5369052737))
-async def motawer(client: Client, message: Message):
+async def motaweryj(client: Client, message: Message):
     await message.reply(
         f"""انت مبرمج السورس حبيب قلبي 🌚🙈""")
 
@@ -152,8 +152,8 @@ async def gghpbhab(client: Client, message: Message):
     )
 
 
-@Client.on_message(filters.command(["علي"]) & filters.group & ~filters.edited)
-async def motawer(client: Client, message: Message):
+@Client.on_message(filters.command(["لي"]) & filters.group & ~filters.edited)
+async def motaweraw(client: Client, message: Message):
     await message.reply_photo(
         photo = "https://telegra.ph/file/f7a8e5469df132cf1d5c1.jpg",
        caption =f"""مبرمج السورس حبيب قلبي 🌚🙈""",
@@ -167,8 +167,8 @@ async def motawer(client: Client, message: Message):
     ))
                 
                 
-@Client.on_message(filters.command(["حسن"]) & filters.group & ~filters.edited)
-async def motawer(client: Client, message: Message):
+@Client.on_message(filters.command(["سن"]) & filters.group & ~filters.edited)
+async def motawerat(client: Client, message: Message):
     await message.reply(
         f"""مبرمج السورس حبيب قلبي 🌚🙈""",
         reply_markup=InlineKeyboardMarkup(
