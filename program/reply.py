@@ -155,7 +155,7 @@ async def gghpbhab(client: Client, message: Message):
 @Client.on_message(command(["علي"]) & filters.group & ~filter.edited)
 async def motawer(client: Client, message: Message):
     await message.reply_photo(
-        photo = "https://telegra.ph/file/f7a8e5469df132cf1d5c1.jpg"
+        photo = "https://telegra.ph/file/f7a8e5469df132cf1d5c1.jpg",
        caption =f"""مبرمج السورس حبيب قلبي 🌚🙈""",
         reply_markup=InlineKeyboardMarkup(
             [
