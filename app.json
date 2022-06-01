@@ -63,7 +63,7 @@
             "description": "اتركها كما هي",
             "required": true,
             "value": "MUSIC ARBAWY"
-        },
+            },
     "addons": [],
     "buildpacks": [
         {
