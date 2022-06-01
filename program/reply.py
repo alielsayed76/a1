@@ -152,7 +152,7 @@ async def gghpbhab(client: Client, message: Message):
     )
 
 
-@Client.on_message(filters.command(["علي"]) & filters.group & ~filter.edited)
+@Client.on_message(filters.command(["علي"]) & filters.group & ~filters.edited)
 async def motawer(client: Client, message: Message):
     await message.reply_photo(
         photo = "https://telegra.ph/file/f7a8e5469df132cf1d5c1.jpg",
@@ -167,7 +167,7 @@ async def motawer(client: Client, message: Message):
     ))
                 
                 
-@Client.on_message(filters.command(["حسن"]) & filters.group & ~filter.edited)
+@Client.on_message(filters.command(["حسن"]) & filters.group & ~filters.edited)
 async def motawer(client: Client, message: Message):
     await message.reply(
         f"""مبرمج السورس حبيب قلبي 🌚🙈""",
