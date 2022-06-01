@@ -64,11 +64,6 @@
             "required": true,
             "value": "MUSIC ARBAWY"
         },
-        "HNDLR": {
-            "description": "اتركها كما هي",
-            "required": true,
-            "value" : "ر"
-        },
     "addons": [],
     "buildpacks": [
         {
