@@ -1,5 +1,5 @@
 {
-    "name": "ARBAWY musicc",
+    "name": "ARBAWY musiccc",
     "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat, powered by pytgcalls and pyrogram",
     "logo": "https://telegra.ph/file/eeb7d3c56bbb24506639d.jpg",
     "keywords": [
@@ -47,23 +47,29 @@
         "GROUP_SUPPORT": {
             "description": "ضع هنا يوزر جروبك بدون علامة @",
             "required": true,
-            "value": "Source_Arbawy1"
+            "value": "eithonsupport"
         },
         "UPDATES_CHANNEL": {
             "description": "ضع هنا يوزر قناتك بدون علامة @",
             "required": true,
-            "value": "SOURCE_ARBAWY"
+            "value": "EITHON"
         },
         "OWNER_NAME": {
             "description": "ضع هنا يوزر المطور بدون علامة @",
             "required": true,
-            "value": "EL_RAYEQ"
+            "value": "Mohmad990754"
         },
         "ALIVE_NAME": {
             "description": "اتركها كما هي",
             "required": true,
             "value": "MUSIC ARBAWY"
-            },
+        },
+        "HNDLR": {
+            "description": "اتركها كما هي",
+            "required": true,
+            "value": "ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي ئ ؤ ء / ! ."
+        }
+    },
     "addons": [],
     "buildpacks": [
         {
