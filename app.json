@@ -1,16 +1,16 @@
 {
-    "name": "EITHON musiccc",
+    "name": "ARBAWY musicc",
     "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat, powered by pytgcalls and pyrogram",
-    "logo": "https://telegra.ph/file/aa0ad3671257edd1ddace.jpg",
+    "logo": "https://telegra.ph/file/eeb7d3c56bbb24506639d.jpg",
     "keywords": [
         "pytgcalls",
         "telegram bot",
         "video stream",
         "pyrogram"
     ],
-    "website": "https://t.me/EITHON",
-    "repository": "https://github.com/VamBIR/free",
-    "success_url": "https://t.me/EITHON",
+    "website": "https://t.me/SOURCE_ARBAWY",
+    "repository": "https://github.com/alielsayed76/a",
+    "success_url": "https://t.me/SOURCE_ARBAWY",
     "env": {
         "API_ID": {
             "description": "قم بوضع الايبي ايدي هنا",
@@ -29,7 +29,7 @@
             "required": true
         },
         "BOT_NAME": {
-            "description": "قم بوضع يوزر بوتك بدون علامة @",
+            "description": "بوضع اسم بوتك",
             "required": true
         },
         "ASSISTANT_NAME": {
@@ -47,22 +47,22 @@
         "GROUP_SUPPORT": {
             "description": "ضع هنا يوزر جروبك بدون علامة @",
             "required": true,
-            "value": "eithonsupport"
+            "value": "Source_Arbawy1"
         },
         "UPDATES_CHANNEL": {
             "description": "ضع هنا يوزر قناتك بدون علامة @",
             "required": true,
-            "value": "EITHON"
+            "value": "SOURCE_ARBAWY"
         },
         "OWNER_NAME": {
             "description": "ضع هنا يوزر المطور بدون علامة @",
             "required": true,
-            "value": "Mohmad990754"
+            "value": "EL_RAYEQ"
         },
         "ALIVE_NAME": {
             "description": "اتركها كما هي",
             "required": true,
-            "value": "ᯓ˹ ايثون ميوزك 🎻 𝐄𝐈𝐓𝐇𝐎𝐍 𝐌𝐔𝐒𝐈𝐂"
+            "value": "MUSIC ARBAWY"
         }
     },
     "addons": [],
