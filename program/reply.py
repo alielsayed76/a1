@@ -190,3 +190,11 @@ async def motawerat(client: Client, message: Message):
                 ]
             ]
     ))
+
+    
+@Client.on_message(command(["ين ضافني", f"nftbst@{BOT_USERNAME}"]) & other_filters)
+async def nftbst(client: Client, message: Message):
+    await message.reply(
+        f"""انت دخلت بالرابط متعملش نفسك غبي 😒""")
+    
+    
