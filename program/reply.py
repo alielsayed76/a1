@@ -4,7 +4,7 @@ import time
 import pyrogram
 from cache.admins import admins
 from pyrogram import Client, filters
-from config import IMG_3, UPDATES_CHANNEL, OWNER_NAME, SUDO_USERS, BOT_USERNAME
+from config import IMG_3, UPDATES_CHANNEL, OWNER_NAME, SUDO_USERS, BOT_USERNAME, ALIVE_NAME
 from driver.filters import command, other_filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
@@ -44,7 +44,7 @@ async def nftb(client: Client, message: Message):
                     InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 ],
                 [
-                InlineKeyboardButton("Programmer", url=f"https://t.me/{OWNER_NAME}"),
+                InlineKeyboardButton("ALIVE_NAME", url=f"https://t.me/{OWNER_NAME}"),
                 ],
             ]
         ),
