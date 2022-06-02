@@ -4,7 +4,7 @@ import time
 import pyrogram
 from cache.admins import admins
 from pyrogram import Client, filters
-from config import IMG_3, UPDATES_CHANNEL, OWNER_NAME, SUDO_USERS, BOT_USERNAME, ALIVE_NAME
+from config import IMG_3, UPDATES_CHANNEL, OWNER_NAME, SUDO_USERS, BOT_USERNAME, ALIVE_NAME, BOT_NAME
 from driver.filters import command, other_filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
@@ -138,7 +138,7 @@ async def motawer(client: Client, message: Message):
 @Client.on_message(command(["وت", f"gghhpbhab@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def gghpbhab(client: Client, message: Message):
     await message.reply_text(
-        f"""قلب البوت 🥺🌚""", 
+        f"""اسمي """, {BOT_NAME}, """يروحي 🌚❤️""", 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -146,7 +146,7 @@ async def gghpbhab(client: Client, message: Message):
                         ALIVE_NAME, url=f"https://t.me/{OWNER_NAME}")
                 ],[
                     InlineKeyboardButton(
-                        "ضيف البوت لجروبك", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        BOT_NAME, url=f"https://t.me/{BOT_USERNAME}")
                 ]
             ]
         ),
