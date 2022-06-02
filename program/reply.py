@@ -138,7 +138,7 @@ async def motawer(client: Client, message: Message):
 @Client.on_message(command(["وت", f"gghhpbhab@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def gghpbhab(client: Client, message: Message):
     await message.reply_text(
-        f"""اسمي """, {BOT_NAME}, """يروحي 🌚❤️""", 
+        f"""اسمي {BOT_NAME} يروحي 🌚❤️""", 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
