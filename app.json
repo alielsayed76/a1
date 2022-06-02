@@ -47,17 +47,17 @@
         "GROUP_SUPPORT": {
             "description": "ضع هنا يوزر جروبك بدون علامة @",
             "required": true,
-            "value": "eithonsupport"
+            "value": "Source_Arbawy1"
         },
         "UPDATES_CHANNEL": {
             "description": "ضع هنا يوزر قناتك بدون علامة @",
             "required": true,
-            "value": "EITHON"
+            "value": "SOURCE_ARBAWY"
         },
         "OWNER_NAME": {
             "description": "ضع هنا يوزر المطور بدون علامة @",
             "required": true,
-            "value": "Mohmad990754"
+            "value": "EL_RAYEQ"
         },
         "ALIVE_NAME": {
             "description": "اتركها كما هي",
@@ -66,8 +66,8 @@
         },
         "HNDLR": {
             "description": "اتركها كما هي",
-            "required": true,
-            "value": "ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي ئ ؤ ء / ! ."
+            "required": false,
+            "value": "ر"
         }
     },
     "addons": [],
