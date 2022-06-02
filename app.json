@@ -68,12 +68,7 @@
             "description": "اتركها كما هي",
             "required": false,
             "value": "ر"
-        },
-        "BOT_ARAB_NAME": {
-            "description": "قم بوضع اسم بوتك باللغه العربية بدون زخارف",
-            "required": false,
-            "value": "رايق"
-        }
+       }
     },
     "addons": [],
     "buildpacks": [
