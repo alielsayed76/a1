@@ -19,7 +19,7 @@ ASSISTANT_NAME = getenv("ASSISTANT_NAME", "EL_RAYEQ_B0T")
 GROUP_SUPPORT = getenv("GROUP_SUPPORT", "Source_Arbawy1")
 UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "SOURCE_ARBAWY")
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5002164804").split()))
-COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي ئ ؤ ء / ! .").split())
+COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي ئ ؤ ء 😹 😂 💋 🌚 🙈 / ! .").split())
 ALIVE_IMG = getenv("ALIVE_IMG", "https://telegra.ph/file/eeb7d3c56bbb24506639d.jpg")
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "180"))
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/alielsayed76/a")
