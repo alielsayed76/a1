@@ -44,7 +44,7 @@ async def nftb(client: Client, message: Message):
                     InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 ],
                 [
-                InlineKeyboardButton("ALIVE_NAME", url=f"https://t.me/{OWNER_NAME}"),
+                InlineKeyboardButton( ALIVE_NAME, url=f"https://t.me/{OWNER_NAME}"),
                 ],
             ]
         ),
