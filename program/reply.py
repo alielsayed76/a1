@@ -195,9 +195,9 @@ async def nftbst(client: Client, message: Message):
         f"""انت دخلت بالرابط متعملش نفسك غبي 😒""")
     
     
-@Client.on_message(command(["😹😹", f"nftbsta@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["يب", f"nftbsta@{BOT_USERNAME}"]) & other_filters)
 async def nftbsta(client: Client, message: Message):
     await message.reply(
-        f"""ضحكتك عسل زيك ياروحي 🌚❤️""")
+        f"""فرح خالتك قريب 😹❤️""")
     
     
