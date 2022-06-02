@@ -147,6 +147,9 @@ async def gghpbhab(client: Client, message: Message):
                 ],[
                     InlineKeyboardButton(
                         "𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}")
+                ],[
+                    InlineKeyboardButton(
+                        "ضيف البوت لجروبك", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ]
             ]
         ),
