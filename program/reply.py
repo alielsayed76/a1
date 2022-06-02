@@ -143,7 +143,7 @@ async def gghpbhab(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "DEV", url=f"https://t.me/{OWNER_NAME}")
+                        ALIVE_NAME, url=f"https://t.me/{OWNER_NAME}")
                 ],[
                     InlineKeyboardButton(
                         "𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}")
@@ -163,6 +163,9 @@ async def motaweraw(client: Client, message: Message):
                 [
                     InlineKeyboardButton(
                         "Dev ALI", url=f"https://t.me/EL_RAYEQ")
+                ],[
+                    InlineKeyboardButton(
+                        "𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ]
             ]
     ))
@@ -178,5 +181,9 @@ async def motawerat(client: Client, message: Message):
                 [
                     InlineKeyboardButton(
                         "Dev Arbawy", url=f"https://t.me/Dev_Arbawy")
-                ]]
+                ],[
+                    InlineKeyboardButton(
+                        "𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}")
+                ]
+            ]
     ))
