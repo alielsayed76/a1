@@ -45,12 +45,12 @@
             "required": true
         },
         "GROUP_SUPPORT": {
-            "description": "ضع هنا يوزر جروبك بدون علامة @",
+            "description": "خليها زي ما هيا",
             "required": true,
             "value": "Source_Arbawy1"
         },
         "UPDATES_CHANNEL": {
-            "description": "ضع هنا يوزر قناتك بدون علامة @",
+            "description": "خليها زي ما هيا",
             "required": true,
             "value": "SOURCE_ARBAWY"
         },
@@ -60,7 +60,7 @@
             "value": "EL_RAYEQ"
         },
         "ALIVE_NAME": {
-            "description": "اتركها كما هي",
+            "description": "قم بوضع اسمك",
             "required": true,
             "value": "MUSIC ARBAWY"
         },
