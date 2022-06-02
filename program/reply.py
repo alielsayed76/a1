@@ -153,7 +153,7 @@ async def gghpbhab(client: Client, message: Message):
     )
 
 
-@Client.on_message(command(["لي", f"motaweraw@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(filters.command(["لي", f"motaweraw@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def motaweraw(client: Client, message: Message):
     await message.reply_photo(
         photo = "https://telegra.ph/file/f7a8e5469df132cf1d5c1.jpg",
@@ -171,7 +171,7 @@ async def motaweraw(client: Client, message: Message):
     ))
                 
                 
-@Client.on_message(command(["سن", f"motawerat@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(filters.command(["سن", f"motawerat@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def motawerat(client: Client, message: Message):
     await message.reply_photo(
         photo = "https://telegra.ph/file/7dd0f2755c4bb2ed05b15.jpg",
