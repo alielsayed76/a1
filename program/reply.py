@@ -138,18 +138,7 @@ async def motawer(client: Client, message: Message):
 @Client.on_message(command(["وت", f"gghhpbhab@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def gghpbhab(client: Client, message: Message):
     await message.reply_text(
-        """قلب البوت 🥺🌚""",
-    'اسمي '{ALIVE_NAME}' يا قلبي 😍💜',
-    'اسمي '{ALIVE_NAME}' يا روحي 🙈❤️',
-    'اسمي '{ALIVE_NAME}' يا عمري 🥰🤍',
-   'اسمي '{ALIVE_NAME}' يا قمر 🖤🌿',
-    'اسمي بوت '{ALIVE_NAME}' 😻❤️',
-    'اسمي '{ALIVE_NAME}' يا مزه 😘🍒',
-    'اسمي '{ALIVE_NAME}' يعم 😒',
-    'مقولت اسمي '{ALIVE_NAME}' في اي 🙄',
-    'اسمي '{ALIVE_NAME}' الكيوت 🌝💙',
-    'اسمي '{ALIVE_NAME}' يا حياتي 🌚❤️',
-    'اسمي '{ALIVE_NAME}' يوتكه 🙈💔', 
+        f"""قلب البوت 🥺🌚""", 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
