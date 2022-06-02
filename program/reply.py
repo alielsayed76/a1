@@ -170,8 +170,9 @@ async def motaweraw(client: Client, message: Message):
                 
 @Client.on_message(command(["سن", f"motawerat@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def motawerat(client: Client, message: Message):
-    await message.reply(
-        f"""مبرمج السورس حبيب قلبي 🌚🙈""",
+    await message.reply_photo(
+        photo = "https://telegra.ph/file/7dd0f2755c4bb2ed05b15.jpg",
+        caption =f"""مبرمج السورس حبيب قلبي 🌚🙈""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
