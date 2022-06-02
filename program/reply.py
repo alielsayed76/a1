@@ -4,7 +4,7 @@ import time
 import pyrogram
 from cache.admins import admins
 from pyrogram import Client, filters
-from config import IMG_3, UPDATES_CHANNEL, OWNER_NAME, SUDO_USERS, BOT_USERNAME, ALIVE_NAME, BOT_NAME
+from config import IMG_3, UPDATES_CHANNEL, OWNER_NAME, SUDO_USERS, BOT_USERNAME, ALIVE_NAME, BOT_NAME, BOT_ARAB_NAME
 from driver.filters import command, other_filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
@@ -114,7 +114,7 @@ async def motawerf(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "مطوري 🌚❤️", url=f"https://t.me/{OWNER_NAME}")
+                        ALIVE_NAME, url=f"https://t.me/{OWNER_NAME}")
                 ],
                 [InlineKeyboardButton("🎧اضافه البوت اللي مجموعتك🎧", url=f"http://t.me/{BOT_USERNAME}?startgroup=new"),              
                 ]
@@ -126,19 +126,19 @@ async def motawerf(client: Client, message: Message):
 @Client.on_message(command(["تبتي", f"motaweryj@{BOT_USERNAME}"]) & filters.user(5369052737))
 async def motaweryj(client: Client, message: Message):
     await message.reply(
-        f"""انت مبرمج السورس حبيب قلبي 🌚🙈""")
+        f"""مبرمج السورس حبيب قلبي 🌚🙈""")
 
 
 @Client.on_message(command(["تبتي", f"motawer@{BOT_USERNAME}"]) & filters.user(5002164804))
 async def motawer(client: Client, message: Message):
     await message.reply(
-        f"""مبرمج السورس حبيب قلبي 🌚🙈""")
+        f"""مبرمج السورس حبيب قلبي 🌚💋""")
 
 
 @Client.on_message(command(["وت", f"gghhpbhab@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def gghpbhab(client: Client, message: Message):
     await message.reply_text(
-        f"""اسمي {BOT_NAME} يروحي 🌚❤️""", 
+        f"""اسمي {BOT_ARAB_NAME} يروحي 🌚❤️""", 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -157,7 +157,7 @@ async def gghpbhab(client: Client, message: Message):
 async def motaweraw(client: Client, message: Message):
     await message.reply_photo(
         photo = "https://telegra.ph/file/f7a8e5469df132cf1d5c1.jpg",
-       caption =f"""مبرمج السورس حبيب قلبي 🌚🙈""",
+       caption =f"""مبرمج السورس حبيب قلبي 🌚💋""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
