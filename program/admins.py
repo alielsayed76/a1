@@ -124,7 +124,7 @@ async def pause(client, m: Message):
 
 
 @Client.on_message(
-    command(["resume", "واصله", f"resume@{BOT_USERNAME}", "vresume"]) & other_filters
+    command(["resume", "ستئناف", f"resume@{BOT_USERNAME}", "vresume"]) & other_filters
 )
 @authorized_users_only
 async def resume(client, m: Message):
@@ -142,7 +142,7 @@ async def resume(client, m: Message):
 
 
 @Client.on_message(
-    command(["mute", "تم", "يوت" , f"mute@{BOT_USERNAME}", "vmute"]) & other_filters
+    command(["mute", "يوت" , f"mute@{BOT_USERNAME}", "vmute"]) & other_filters
 )
 @authorized_users_only
 async def mute(client, m: Message):
