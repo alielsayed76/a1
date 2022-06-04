@@ -276,20 +276,3 @@ async def cbunmute(_, query: CallbackQuery):
         await query.answer("❌ مافيه اغنيه", show_alert=True)
 
 
-@Client.on_message(
-    command(["volume", "لصوت", f"volume@{BOT_USERNAME}", "vol"]) & other_filters
-)
-@authorized_users_only
-async def change_volume(client, m: Message):
-    range = m.command[1]
-    chat_id = m.chat.id
-    if chat_id in QUEUE:
-        try:
-            await call_py.change_volume_call(chat_id, volume=int(range))
-            await m.reply(
-                f"✅ **تم ضبط الصوت على** `{range}`%"
-            )
-        except Exception as e:
-            await m.reply(f"🚫 **خطاء:**\n\n`{e}`")
-    else:
-        await m.reply("❌ **قائمة التشغيل فارغه**")
