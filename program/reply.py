@@ -12,9 +12,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 @Client.on_message(command(["لإعدادات", "لاعدادات", "عدادات", "م", f"nftb@{BOT_USERNAME}"]) & other_filters)
 async def nftb(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"{IMG_3}",
-        caption=f"""🌀 ها هي اوامر الاغاني :
+    await message.reply(f"""🌀 ها هي اوامر الاغاني :
 ━━━━━━━━━━━━
 ⇦اوامر تشغيل البوت في المجموعات⇨
 ⇦ ✪『 `تشغيل` 』✪➢ ➕ 「اسم الأغنية او / رابط」تشغيل الصوت mp3
