@@ -35,7 +35,7 @@ ydl_opts = {
 }
 
 
-@Client.on_message(command(["song","غنيه","حميل","تحميل","اغنيه", f"song@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["/song","غنيه","حميل","تحميل","اغنيه", f"song@{BOT_USERNAME}"]) & ~filters.edited)
 def song(_, message):
     query = " ".join(message.command[1:])
     m = message.reply("🔎 جاري البحث انتظر قليلآ...")
@@ -60,7 +60,7 @@ def song(_, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"**🎧 الرافع @{BOT_USERNAME} 👑المالك: @{OWNER_NAME} قناه البوت: @{UPDATES_CHANNEL} **"
+        rep = f"**🎧 الرافع @{BOT_USERNAME}\n 👑المالك: @{OWNER_NAME}\n قناه البوت: @{UPDATES_CHANNEL} **"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(float(dur_arr[i])) * secmul
@@ -87,7 +87,7 @@ def song(_, message):
 
 
 @Client.on_message(
-    command(["vsong", "تنزيل","تحميل فيديو","نزيل فيديو", f"vsong@{BOT_USERNAME}", "video", f"video@{BOT_USERNAME}"]) & ~filters.edited
+    command(["/vsong", "تنزيل","تحميل فيديو","نزيل فيديو", f"vsong@{BOT_USERNAME}", "video", f"video@{BOT_USERNAME}"]) & ~filters.edited
 )
 async def vsong(client, message):
     ydl_opts = {
@@ -135,7 +135,7 @@ async def vsong(client, message):
         print(e)
 
 
-@Client.on_message(command(["lyric","كلمات",  f"lyric@{BOT_USERNAME}"]))
+@Client.on_message(command(["/lyric","كلمات",  f"lyric@{BOT_USERNAME}"]))
 async def lyrics(_, message):
     try:
         if len(message.command) < 2:
