@@ -87,7 +87,7 @@ def song(_, message):
 
 
 @Client.on_message(
-    command(["vsong", "نزيل","حميل فديو","نزيل فديو", f"vsong@{BOT_USERNAME}", "video", f"video@{BOT_USERNAME}"]) & ~filters.edited
+    command(["vsong", "تنزيل","تحميل فيديو","نزيل فيديو", f"vsong@{BOT_USERNAME}", "video", f"video@{BOT_USERNAME}"]) & ~filters.edited
 )
 async def vsong(client, message):
     ydl_opts = {
@@ -114,7 +114,7 @@ async def vsong(client, message):
     except Exception as e:
         print(e)
     try:
-        msg = await message.reply("📥 **🎧 الرافع @{BOT_USERNAME} 👑المالك: @{OWNER_NAME} قناه البوت: @{UPDATES_CHANNEL} ...**")
+        msg = await message.reply("📥 **🎧 الرافع @{BOT_USERNAME}\n\n 👑المالك: @{OWNER_NAME}\n\n قناه البوت: @{UPDATES_CHANNEL} ...**")
         with YoutubeDL(ydl_opts) as ytdl:
             ytdl_data = ytdl.extract_info(link, download=True)
             file_name = ytdl.prepare_filename(ytdl_data)
@@ -135,7 +135,7 @@ async def vsong(client, message):
         print(e)
 
 
-@Client.on_message(command(["lyric","لمات",  f"lyric@{BOT_USERNAME}"]))
+@Client.on_message(command(["lyric","كلمات",  f"lyric@{BOT_USERNAME}"]))
 async def lyrics(_, message):
     try:
         if len(message.command) < 2:
