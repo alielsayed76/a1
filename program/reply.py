@@ -5,12 +5,12 @@ import pyrogram
 from cache.admins import admins
 from pyrogram import Client, filters
 from config import IMG_3, UPDATES_CHANNEL, OWNER_NAME, SUDO_USERS, BOT_USERNAME, ALIVE_NAME, BOT_NAME
-from driver.filters import command, other_filters
+from driver.filters import command, other_filters, other_filters3
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 
 
-@Client.on_message(command(["الإعدادات", "الاعدادات", "اعدادات", "مم", f"nftb@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["الإعدادات", "الاعدادات", "اعدادات", "مم", f"nftb@{BOT_USERNAME}"]) & other_filters3)
 async def nftb(client: Client, message: Message):
     await message.reply(f"""🌀 ها هي اوامر الاغاني :
 ━━━━━━━━━━━━
@@ -51,7 +51,7 @@ async def nftb(client: Client, message: Message):
     )
 
    
-@Client.on_message(command([".", f"vgdg@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command([".", f"vgdg@{BOT_USERNAME}"]) & other_filters3)
 async def vgdg(client: Client, message: Message):
     await message.reply(
         f""" صلي علي الحبيب ❤️ """
