@@ -58,8 +58,3 @@ async def vgdg(client: Client, message: Message):
         )
 
     
-@Client.on_message(command(["..", f"vgdg@{BOT_USERNAME}"]) & other_filters)
-async def vgdg(client: Client, message: Message):
-    await message.reply(
-        f""" صلي علي حبيبك ❤️ """
-        )
