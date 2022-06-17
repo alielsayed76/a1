@@ -58,3 +58,11 @@ async def vgdg(client: Client, message: Message):
         )
 
     
+@Client.on_message(command(["تهكير"]) & other_filters)
+async def ashaa(client: Client, message: Message):
+    await message.reply(
+        f"""تم تحديد الضحية ليتم تهكيره""")
+    await message.edit(
+        f"""جار اختراق الضحية +(هحط رمز التحميل )""")
+    await message.edit(f"""تم الاتصال ب api الاختراق بنجاح وجار السحب""")
+    await message.edit(f"""تم سحب الصور والفيديوهات بنجاح""")
